@@ -1,5 +1,4 @@
-const CommandBase = require('../command-base');
-
+import { CommandBase } from "../command-base";
 
 /**
  * 脳を破壊する
@@ -73,4 +72,4 @@ class Brainfuck extends CommandBase {
     }
 }
 
-module.exports = Brainfuck;
+export default Brainfuck;

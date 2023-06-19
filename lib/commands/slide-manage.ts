@@ -1,6 +1,6 @@
-const fetch = require('node-fetch').default;
+import fetch from 'node-fetch';
 
-const CommandBase = require('../command-base');
+import { CommandBase } from "../command-base";
 
 const { SPREAD_SHEET_API, SPREAD_SHEET_API_TOKEN } = process.env;
 
@@ -99,4 +99,4 @@ class SlideManage extends CommandBase {
     }
 }
 
-module.exports = SlideManage;
+export default SlideManage;

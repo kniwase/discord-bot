@@ -1,5 +1,4 @@
-const config = require('../config.json');
-
+import config from "../config.json";
 
 const COMMAND_PREFIX = config.prefix;
 
@@ -146,10 +145,10 @@ function getOptionsMessage(strs) {
     );
 }
 
-module.exports = {
-    parseMessage,
-    objectToQueryString,
-    randomInt,
-    getLevenshteinSimilarity,
-    getOptionsMessage,
+export {
+  parseMessage,
+  objectToQueryString,
+  randomInt,
+  getLevenshteinSimilarity,
+  getOptionsMessage,
 };

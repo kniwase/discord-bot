@@ -1,7 +1,7 @@
-const fetch = require('node-fetch').default;
+import fetch from 'node-fetch';
 
-const CommandBase = require('../command-base');
-const { objectToQueryString, randomInt } = require('../bot-utils');
+import { CommandBase } from "../command-base";
+import { objectToQueryString, randomInt } from '../bot-utils';
 
 
 /**
@@ -45,4 +45,4 @@ class SearchVideo extends CommandBase {
     }
 }
 
-module.exports = SearchVideo;
+export default SearchVideo;

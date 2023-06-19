@@ -1,7 +1,7 @@
-const fetch = require('node-fetch').default;
+import fetch from 'node-fetch';
 
-const CommandBase = require('../command-base');
-const { objectToQueryString } = require('../bot-utils');
+import { CommandBase } from "../command-base";
+import { objectToQueryString } from '../bot-utils';
 
 
 /**
@@ -62,4 +62,4 @@ class Translate extends CommandBase {
     }
 }
 
-module.exports = Translate;
+export default Translate;

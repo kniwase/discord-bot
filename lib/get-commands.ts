@@ -1,11 +1,10 @@
-const fs = require('fs');
+import * as fs from "fs";
 
-const CommandBase = require('./command-base');
-const {
+import { CommandBase } from "./command-base";
+import {
     getBlankMessage,
     getNoCommandMessage
-} = require('./messages');
-
+} from "./messages";
 
 const COMMANDS_DIR = `${__dirname}/commands`;
 
@@ -54,4 +53,4 @@ class Help extends CommandBase {
     }
 }
 
-module.exports = getCommandMap;
+export { getCommandMap };

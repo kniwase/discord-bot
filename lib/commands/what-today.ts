@@ -1,8 +1,7 @@
-const fetch = require('node-fetch').default;
+import fetch from "node-fetch";
 
-const CommandBase = require('../command-base');
-const { randomInt } = require('../bot-utils');
-
+import { CommandBase } from "../command-base";
+import { randomInt } from "../bot-utils";
 
 /**
  * 今日は何の日を表示
@@ -42,4 +41,4 @@ class WhatToday extends CommandBase {
     }
 }
 
-module.exports = WhatToday;
+export default WhatToday;

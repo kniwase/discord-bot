@@ -2,6 +2,9 @@
  * コマンドの基底クラス
  */
 class CommandBase {
+    name: string;
+    description: string;
+
     constructor() {
         /** コマンドの名前、呼び出し時はこの名前を使う */
         this.name = 'command-name';
@@ -16,4 +19,4 @@ class CommandBase {
     async exec(...args) { }
 }
 
-module.exports = CommandBase;
+export { CommandBase };

@@ -1,5 +1,5 @@
-const CommandBase = require('../command-base');
-const { randomInt } = require('../bot-utils');
+import { CommandBase } from "../command-base";
+import { randomInt } from '../bot-utils';
 
 
 /** ポーカーで遊ぶ */
@@ -164,4 +164,4 @@ class PlayingCard {
     }
 }
 
-module.exports = Poker;
+export default Poker;

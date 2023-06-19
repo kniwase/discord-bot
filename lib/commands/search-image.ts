@@ -1,8 +1,7 @@
-const fetch = require('node-fetch').default;
+import fetch from "node-fetch";
 
-const CommandBase = require('../command-base');
-const { objectToQueryString, randomInt } = require('../bot-utils');
-
+import { CommandBase } from "../command-base";
+import { objectToQueryString, randomInt } from "../bot-utils";
 
 /**
  * 画像を検索する
@@ -50,4 +49,4 @@ class SearchImage extends CommandBase {
     }
 }
 
-module.exports = SearchImage;
+export default SearchImage;

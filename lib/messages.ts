@@ -1,15 +1,14 @@
-const CommandBase = require('./command-base');
-const { getLevenshteinSimilarity, getOptionsMessage } = require('./bot-utils');
-
+import { CommandBase } from "./command-base";
+import { getLevenshteinSimilarity, getOptionsMessage } from "./bot-utils";
 
 /** botがログインした際の通知 */
-const botLoggedInMessage = 'bot user has logged in!';
+const botLoggedInMessage = "bot user has logged in!";
 
 /** コマンド引数の値が不正だったときの通知 */
-const argumentsErrorMessage = 'Oops! Arguments specification may be malformed!';
+const argumentsErrorMessage = "Oops! Arguments specification may be malformed!";
 
 /** コマンドの実行中に例外が発生した際の通知 */
-const executionErrorMessage = 'Oops! Some **ERROR** occured during executing command!';
+const executionErrorMessage = "Oops! Some **ERROR** occured during executing command!";
 
 /**
  * コマンド名が空だったときのエラーメッセージを生成
@@ -45,10 +44,10 @@ function getNoCommandMessage(commandName, commandMap) {
     );
 }
 
-module.exports = {
-    botLoggedInMessage,
-    argumentsErrorMessage,
-    executionErrorMessage,
-    getBlankMessage,
-    getNoCommandMessage,
+export {
+  botLoggedInMessage,
+  argumentsErrorMessage,
+  executionErrorMessage,
+  getBlankMessage,
+  getNoCommandMessage,
 };

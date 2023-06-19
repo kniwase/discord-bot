@@ -1,4 +1,4 @@
-const CommandBase = require('../command-base');
+import { CommandBase } from "../command-base";
 
 
 /**
@@ -25,4 +25,4 @@ class Shuffle extends CommandBase {
     }
 }
 
-module.exports = Shuffle;
+export default Shuffle;

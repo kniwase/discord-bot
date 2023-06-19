@@ -1,7 +1,8 @@
-require('dotenv').config();
-const express = require('express');
-const getBotClient = require('./lib/get-bot-client');
+import { config } from "dotenv";
+import express from "express";
+import { getBotClient } from "./lib/get-bot-client";
 
+config();
 const app = express();
 
 let lastLoggedInTime = null;

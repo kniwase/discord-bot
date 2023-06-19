@@ -1,8 +1,7 @@
-const { format } = require('util');
-const vm = require('vm');
+import { format } from "util";
+import vm from "vm";
 
-const CommandBase = require('../command-base');
-
+import { CommandBase } from "../command-base";
 
 /**
  * 渡された文字列をJavaScriptとして評価する
@@ -36,4 +35,4 @@ class Eval extends CommandBase {
     }
 }
 
-module.exports = Eval;
+export default Eval;

@@ -1,17 +1,16 @@
-const Discord = require('discord.js');
-require('discord-reply');
+import * as Discord from "discord.js";
+import "discord-reply";
 
-const { prefix } = require('../config.json');
-const getCommandMap = require('./get-commands');
-const { parseMessage } = require('./bot-utils');
-const {
+import { prefix } from "../config.json";
+import { getCommandMap } from "./get-commands";
+import { parseMessage } from "./bot-utils";
+import {
     botLoggedInMessage,
     argumentsErrorMessage,
     executionErrorMessage,
     getBlankMessage,
-    getNoCommandMessage
-} = require('./messages');
-
+    getNoCommandMessage,
+} from "./messages";
 
 const { BOT_NAME } = process.env;
 
@@ -54,4 +53,4 @@ function getBotClient() {
     return client;
 }
 
-module.exports = getBotClient;
+export { getBotClient };

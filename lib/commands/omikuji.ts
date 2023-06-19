@@ -1,5 +1,5 @@
-const CommandBase = require('../command-base');
-const { randomInt } = require('../bot-utils');
+import { CommandBase } from "../command-base";
+import { randomInt } from '../bot-utils';
 
 
 /**
@@ -35,4 +35,4 @@ class Omikuji extends CommandBase {
     }
 }
 
-module.exports = Omikuji;
+export default Omikuji;

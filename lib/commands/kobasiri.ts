@@ -1,5 +1,5 @@
-const CommandBase = require('../command-base');
-const SearchImage = require('./search-image');
+import { CommandBase } from "../command-base";
+import SearchImage from "./search-image";
 const searchImage = new SearchImage();
 
 /**
@@ -17,4 +17,4 @@ class Kobasiri extends CommandBase {
     }
 }
 
-module.exports = Kobasiri;
+export default Kobasiri;

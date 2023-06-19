@@ -1,4 +1,4 @@
-const CommandBase = require('../command-base');
+import { CommandBase } from "../command-base";
 
 
 /**
@@ -18,4 +18,4 @@ class Echo extends CommandBase {
     }
 }
 
-module.exports = Echo;
+export default Echo;

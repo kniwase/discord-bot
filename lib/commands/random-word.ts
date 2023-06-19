@@ -1,6 +1,6 @@
-const fetch = require('node-fetch').default;
+import fetch from 'node-fetch';
 
-const CommandBase = require('../command-base');
+import { CommandBase } from "../command-base";
 
 
 /**
@@ -24,4 +24,4 @@ class RandomWord extends CommandBase {
     }
 }
 
-module.exports = RandomWord;
+export default RandomWord;
